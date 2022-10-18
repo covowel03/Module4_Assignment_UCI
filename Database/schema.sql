@@ -29,6 +29,7 @@ CREATE TABLE storyschema.OnlineUser(
    PRIMARY KEY(UserID)
 );
 
+-- Here, the user can post a comment for everybody about the story
 CREATE TABLE storyschema.Comment(
    CommentID SERIAL,
    PublishedDate TIMESTAMP NOT NULL,
@@ -41,7 +42,7 @@ CREATE TABLE storyschema.Comment(
    FOREIGN KEY(StoryID) REFERENCES storyschema.Stories(StoryID)
 );
 
--- Here, the user can choose only one story (his favorite one)
+-- Here, the user can choose only one story (his favorite one). Moreover, he can also add a comment on why he chooses the story
 CREATE TABLE storyschema.FavoriteStory(
    FavoriteID SERIAL,
    CreationDate TIMESTAMP NOT NULL,
