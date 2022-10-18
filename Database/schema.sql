@@ -22,6 +22,7 @@ CREATE TABLE storyschema.Stories(
 CREATE TABLE storyschema.OnlineUser(
    UserID SERIAL,
    Username VARCHAR(50) NOT NULL,
+   Password VARCHAR(50) NOT NULL,
    Firstname VARCHAR(50) NOT NULL,
    Lastname VARCHAR(50) NOT NULL,
    Birthday DATE NOT NULL,
