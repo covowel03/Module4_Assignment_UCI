@@ -1,17 +1,30 @@
 {
-  "name": "evuort_marty_assignment3",
+  "name": "evuort_marty_assignment4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello, here is my project for this assignment.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "migrate": "knex migrate:latest --knexfile db/knexfile.js",
+    "seed": "knex seed:run --knexfile db/knexfile.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "express": "^4.18.2",
-    "nodemon": "^2.0.20"
-  }
+    "knex": "^2.3.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covowel03/Module3_Assignment_EVUORT_Marty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/covowel03/Module3_Assignment_EVUORT_Marty/issues"
+  },
+  "homepage": "https://github.com/covowel03/Module3_Assignment_EVUORT_Marty#readme"
 }

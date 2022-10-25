@@ -22,7 +22,7 @@ SELECT DISTINCT OnlineUser.Username AS "Users who have already commented on the 
 INNER JOIN storyschema.Comment AS Comment ON Comment.UserID = OnlineUser.UserID;
 
 -- To list all the users who have never commented on the website
-SELECT DISTINCT OnlineUser.Username AS "Users who have never commented on the website" FROM storyschema.OnlineUser AS OnlineUser
+SELECT DISTINCT OnlineUser.Username AS "Users who have never commented on the website" FROM storyschema.OnlineUser 
 EXCEPT
 SELECT DISTINCT OnlineUser.Username FROM storyschema.OnlineUser AS OnlineUser
 INNER JOIN storyschema.Comment AS Comment ON Comment.UserID = OnlineUser.UserID;

@@ -24,3 +24,20 @@ function story(i) {
     });
     Container.style.display = "block";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
